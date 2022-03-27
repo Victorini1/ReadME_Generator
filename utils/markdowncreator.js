@@ -14,12 +14,12 @@ function generateMarkdown(response) {
   - [Questions](#questions)
   ## Installation Instructions
   ${response.Installation}
-  ## Usage Information
-  ![${response.alt}](${response.usage})
   ### Contributions
   ${response.Contributions}
   ## Testing
   ${response.Tests}
+  #### Issues? Concerns?
+  ${response.Contact}
   ## License
   All work included in this repo is reserved under the ${response.license} license.
   ## Questions

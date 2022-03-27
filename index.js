@@ -23,7 +23,7 @@ const questions = ([
       name: 'License',
       message: 'Which liscense will you give this project?',
       type: 'checkbox',
-      choices: [ 'Apache', 'Academic', 'GNU', 'ISC', 'MIT', 'Mozilla', 'Open Source' ]
+      choices: [ 'Apache', 'Academic', 'GNU', 'ISC', 'MIT', 'Mozilla', 'OpenSource' ]
     },
     {
         name: 'Contributions',
