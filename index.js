@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs')
-const generateReadme = require('generate')
+const generateReadme = require('./utils/markdowncreator')
 
 // create the questions
 const questions = ([
@@ -51,11 +51,11 @@ const questions = ([
         type: 'input',
     }
 ])
-   
+// Initiate the inquirer
 function init () {
     inquirer.prompt(questions)
     .then((response => {   
-        console.log(response);
+        // console.log(response);
         fs.writeFileSync("ReadMe.md", generateReadme(response))
     }))
 }    
