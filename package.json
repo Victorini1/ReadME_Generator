@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.2",
+    "markdown-utils": "^1.0.0"
+  }
+}

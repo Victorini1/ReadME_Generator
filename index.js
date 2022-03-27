@@ -1,7 +1,9 @@
 const inquirer = require('inquirer');
+const fs = require('fs')
+const generateReadme = require('generate')
 
-inquirer
-  .prompt([
+// create the questions
+const questions = ([
     {
       name: 'Title',
       message: 'What is the title of your project?',
@@ -21,7 +23,7 @@ inquirer
       name: 'License',
       message: 'Which liscense will you give this project?',
       type: 'checkbox',
-      choices: ['MIT', ]
+      choices: [ 'Apache', 'Academic', 'GNU', 'ISC', 'MIT', 'Mozilla', 'Open Source' ]
     },
     {
         name: 'Contributions',
@@ -50,6 +52,11 @@ inquirer
     }
 ])
    
-  .then((response) =>
-      console.log(response)
-  );
+function init () {
+    inquirer.prompt(questions)
+    .then((response => {   
+        console.log(response);
+        fs.writeFileSync("ReadMe.md", generateReadme(response))
+    }))
+}    
+init();
