@@ -2,7 +2,7 @@
   # ReadME Generator
   ![license](https://img.shields.io/badge/license-MIT-blue)
   ## Description
-  Use of this application is purely educational, but is intended to be a professional readme generator. This Readme was used in the project! 
+  Use of this application is purely educational, but is intended to be a professional readme generator. This Readme was created with the generator! 
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
